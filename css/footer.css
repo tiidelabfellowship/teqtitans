@@ -1,0 +1,26 @@
+footer{
+    background:#000eee;
+    color:#fff;
+    text-align:left;
+    padding:2%;
+}
+footer .footer-wrapper{
+    display:flex;
+    align-items:flex-start
+    ;
+    justify-content:space-around;
+}
+footer h2{
+    margin-bottom:15px;
+}
+footer i{
+    margin-right:15px;
+}
+footer strong{
+    display: block;
+}
+
+footer .copyright{
+    text-align:center;
+    margin: 10px auto 20px;
+}

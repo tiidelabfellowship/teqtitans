@@ -1,0 +1,101 @@
+header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondary);
+    padding: 0 20px;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 1px 1px 5px rgba(0, 0,0,0.5);
+  }
+  .logo {
+    height: 50px;
+    z-index: 3;
+    border-radius:50%;
+  }
+  .fa-user{
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary);
+    padding:10px 12px;
+    border-radius:50%;
+  }
+  @media(min-width:1100px){
+    
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: 80px;
+    position: relative;
+    box-shadow: none;
+  }
+  .nav-links {
+    display: flex;
+    z-index: 3;
+    color: var(--bg-primary);
+  }
+  .nav-links li {
+    margin: 0 10px;
+    padding: 10px;
+    font-weight: 500;
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-links li:hover {
+    border-bottom: 2px solid var(--bg-primary);
+  }
+  .nav-active {
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary);
+    border-radius: 5px;
+    pointer-events: none;
+  }
+  .nav-active:hover,
+  .dropdown {
+    border: none;
+  }
+  /* DROPDOWN MENUS */
+  .dropdown {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .dropdown i {
+    margin-left: 10px;
+  }
+  .dropdown-list {
+    display: none;
+  }
+  .nav-links li:hover .dropdown-list {
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin-top: 50px;
+    background-color: var(--bg-secondary);
+  }
+  .nav-links li:hover .dropdown-list ul {
+    display: block;
+    padding: 14px 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+  .nav-links li:hover .dropdown-list ul li {
+    padding: 15px 0;
+    margin: 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 200px;
+    text-align: center;
+    transition: 0.5s ease-in;
+  }
+  .nav-links li:hover .dropdown-list ul li:hover {
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary);
+    transition: 0.3s ease-in-out;
+  }
+}
