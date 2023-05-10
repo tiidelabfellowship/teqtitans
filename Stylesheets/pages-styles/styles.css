@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Rubik:wght@500;600&display=swap');
 :root{
-    --bg-primary: #000eee;
+    /* --bg-primary: #000eee; */
+    --bg-primary: #001b40;
     --bg-secondary: #fff;
 }
 *{
