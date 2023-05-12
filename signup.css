@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rubik:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+/* font-family: 'Rubik', sans-serif; */
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(90deg, hsla(177,87%,79%,1) 0%, hsla(235,89%,70%,1)100%);
+}
+
+::selection{
+    background: #4158d0;
+    color: #fff;
+}
+
+.wrapper{
+    width: 600px;
+    margin: 50px 0px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+.wrapper h2{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 100px;
+    padding-top: 30px;
+    user-select: none;
+    margin-left: 35px;
+}
+
+.wrapper p{
+    margin-left: 35px;
+}
+
+.wrapper form{
+    padding: 0px 30px 50px 30px;
+}
+
+.wrapper form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.wrapper form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid{
+    border-color: #4158d0;
+}
+
+.wrapper form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+    top: 0%;
+    font-size: 16px;
+    color: #4158d0;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form .checkbox label{
+    margin-top: 18px;
+    color: gray;
+}
+
+form .field input[type="submit"] {
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #4158d0;
+    white-space: nowrap;
+}
+
+form .field input[type="submit"]:hover{
+    background: darkblue;
+}
+
+form .field input[type="submit"]:active{
+    transform: scale(0.95);
+}
+
+form .signin-link{
+    color: #262626;
+    margin-top: 50px;
+    text-align: center;
+}
+
+form .signin-link p{
+    margin: 15px;
+}
+
+form .signin-link .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+form .signin-link .icon i{
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+form .signin-link .icon i:nth-child(1){
+    background: #4267b2;
+    border: 1px solid #4267b2;
+}
+
+form .signin-link .icon i:nth-child(2){
+    background: #db4437;
+    border: 1px solid #db4437;
+}
+
+form .tc{
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .wrapper{
+        width: 400px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 375px){
+    .wrapper{
+        width: 300px;
+        max-width: 100%;
+    }
+
+    form .field input{
+        width: 80%;
+    }
+}
+
