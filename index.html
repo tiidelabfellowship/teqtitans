@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./Stylesheets/pages-styles/styles.css">
+    <link rel="icon" href="./Assets/images/travelEaseWhiteBg.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Stylesheets/container-styles/styles.css">
     <link rel="stylesheet" href="./Stylesheets/container-styles/header.css">
     <link rel="stylesheet" href="./Stylesheets/container-styles/footer.css">
     <title>Travel Ease</title>
 </head>
+
 <body>
 
     <!-- Header and Navigation -->
     <header class="row header space-between upppercase">
         <a href="index.html">
-            <img src="./Assets/images/travel-ease.png" alt="logo" class="logo" width="60px" height="80px"/></a>
+            <img src="./Assets/images/travelEaseWhiteBg.png" alt="logo" class="logo" width="60px" height="80px" /></a>
         <ul class="nav-links row uppercase">
             <li class="nav-active"><a href="#">Home</a></li>
             <li class="dropdown">
-                <a href="about.html">About us</a><i class="fa fa-angle-down"></i>
+                <a href="/Pages/Containers/about.html">About us</a><i class="fa fa-angle-down rotate"></i>
                 <div class="dropdown-list">
                     <ul>
                         <li><a href="#">Our Activities</a></li>
@@ -28,9 +33,9 @@
                     </ul>
                 </div>
             </li>
-           
+
             <li class="dropdown">
-                <a href="#">Destinatons <i class="fa fa-angle-down"></i></a>
+                <a href="/Pages/Containers/hire.html">Destinatons <i class="fa fa-angle-down"></i></a>
                 <div class="dropdown-list">
                     <ul>
                         <li><a href="#">Hotel Booking</a></li>
@@ -54,8 +59,8 @@
                 <i class="fas fa-user"></i> <i class="fa fa-angle-down"></i>
                 <div class="dropdown-list">
                     <ul>
-                        <li><a href="signup.html">Sign Up</a></li>
-                        <li><a href="#">Sign In</a></li>
+                        <li><a href="./Pages/Containers/signup.html">Sign Up</a></li>
+                        <li><a href="./pages/Containers/Authentication/login.html">Sign In</a></li>
                     </ul>
                 </div>
             </li>
@@ -63,7 +68,45 @@
 
     </header>
 
+    <!-- Hero-SEction -->
+    <div class="hero-container row">
+        <div class="hero-inner">
+            <p class="hero-lead uppercase">
+                Travel Ease
+            </p>
+            <p>
+                Discover the world's hidden gems and create memories that last a lifetime. Your journey begins here.
+            </p>
+            <button class="btn"><a href="#">About Us</a></button>
+        </div>
+    </div>
+    <button class="bars" id="bars">
+        <i class="fas fa-bars"></i>
+    </button>
+    <!-- Mobile Nav -->
+    <div id="slideout-menu" class="slideout-menu">
+        <button class="bars" id="bars">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="slide-nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </div>
 
+
+    <!-- Services -->
+    <section class="service-block">
+        <h1 class="text-center">
+            What we offer!
+        </h1>
+      
+
+    </section>
     <!-- Footer -->
     <footer>
         <div class="footer-wrapper">
@@ -94,13 +137,10 @@
             <div class="footer-col-3">
                 <h2>Other Services</h2>
                 <ul>
-                    <li>Car hire</li>
-                    <li>Device tracker</li>
-                    <li>Tour list</li>
-                    <li>Hotel bookings</li>
-                    <li>Travel agents</li>
-
-
+                    <li><a href="#">Car hire</a></li>
+                    <li><a href="#">Device tracker</a></li>
+                    <li><a href="#">Tour list</a></li>
+                    <li><a href="#">Hotel Bookings</a></li>
                 </ul>
             </div>
             <div class="footer-col-4">
@@ -116,8 +156,11 @@
         </div>
 
         <div class="text-center copyright">
-            <p > &copy; Powered by Teqtitans 2023</p>
+            <p> &copy; Powered by Teqtitans 2023</p>
         </div>
     </footer>
+
+    <script src="/Scripts/app.js"></script>
 </body>
+
 </html>

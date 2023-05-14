@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-
 /* ======== Typography ======== */
 
 .hero-title {
@@ -13,7 +8,7 @@
 
 .hero-title, .bg p {
     color: white;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px rgba(0,0,0,0.8);
 }
 
 .bg p {
@@ -79,6 +74,7 @@
 .review-card-container {   
     width: 90%;
     margin: 150px auto;
+    transition: .5s ease;
 }
 
 .review-card-container {
@@ -94,6 +90,8 @@
 .review {
     background-color: rgb(212, 209, 209);
     padding: 120px 20px;
+        transition: .5s ease-in-out;
+box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
 .reviewCard {
@@ -144,35 +142,35 @@
 }
 
 button {
-    background-color: rgb(234, 230, 230);
-    color: var(--bg-primary);
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary);
     border: 0;
     padding: 1em 1.5em;
     border-radius: 8px;
 }
 
 .bg {
-    background-image: url("../../Assets/about/hero.jpg") ;
+    background: linear-gradient(rgba(9, 10, 34, 0.5),rgba(1, 1, 10, 0.7)), url('/Assets/about/hero.jpg') no-repeat center center/cover;
     background-size: cover;
-    background-position: center;
-    height: 450px;
+    height: 80vh;
     width: 100%;
-    background-color: rgb(92, 91, 91);
-    background-blend-mode: overlay;
-    object-fit: cover;
-    object-position: center;
-    text-align: center;
+       text-align: center;
     justify-content: center;
     flex-direction: column;
 }
 
 .features-box {
     margin: 100px auto;
+    /* border:1px #ccc solid; */
+    padding:1rem;
 }
 
 .featuresB {
     width: 32%;
     text-align: center;
+    box-shadow:1px 1px 5px rgba(0,0,0,0.7);
+    padding: 1.4rem;
+    border-radius:4px;
 }
 
 .content-top {
@@ -191,10 +189,14 @@ button {
 .next, .prev {
     position: absolute;
     top: 50%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
 .next {
-    right: 0;
+    right: -18px;
+}
+.prev{
+    left:-18px;
 }
 
 @media (max-width: 600px) {

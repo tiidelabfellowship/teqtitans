@@ -2,16 +2,27 @@ footer{
     background:#001b40;
     color:#fff;
     text-align:left;
-    padding:2%;
+    padding:4% 2%;
 }
+@media(min-width:768px){
+    footer .footer-wrapper{
+        display:flex;
+        align-items:flex-start
+        ;
+        justify-content:space-around;
+    }
+}
+@media(max-width:767px){
 footer .footer-wrapper{
     display:flex;
+    flex-direction:column;
     align-items:flex-start
     ;
-    justify-content:space-around;
+    padding-left:5%;
+}
 }
 footer h2{
-    margin-bottom:15px;
+    margin-bottom:1.5rem;
 }
 footer i{
     margin-right:15px;
@@ -22,5 +33,8 @@ footer strong{
 
 footer .copyright{
     text-align:center;
-    margin: 10px auto 20px;
+    margin: 10px auto;
+}
+footer ul li a:hover, footer strong:hover, footer span:hover{
+    color:#333;
 }
