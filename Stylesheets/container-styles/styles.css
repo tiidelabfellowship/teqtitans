@@ -91,12 +91,10 @@ ul{list-style:none;}
 }
 /* Hero-Section Styles */
 .hero-container{
-    /* background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./Assets/images/homepage-hero.jpg') no-repeat center center/cover; */
+    background: linear-gradient(rgba(1, 8, 20, 0.7),rgba(1, 4, 35, 0.7)), url('../../Assets/images/homepage-hero.jpg') no-repeat center center/cover;
     height:80vh;
     padding:0 7%;
-    background-image: url('../../Assets/images/homepage-hero.jpg');
-    background-size:cover;
-    background-repeat:no-repeat;
+    
   
 }
 .hero-inner{

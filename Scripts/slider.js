@@ -1,61 +1,56 @@
 let data = [
     {
         id: 1,
-        image: '/Assets/about/prince.jpg',
+        image: '../../Assets/about/prince.jpg',
         name: 'Prince Effiong',
         role: 'frontend developer'
     },
     {
         id: 2,
-        image: '/Assets/about/khayrah.jpg',
+        image: '../../Assets/about/khayrah.jpg',
         name: 'Mogaji Khairat',
         role: 'frontend developer'
     },
     {
         id: 3,
-        image: '/Assets/about/Uthman.jpg',
+        image: '../../Assets/about/Uthman.jpg',
         name: 'Dantata Uthman',
         role: 'frontend developer'
     },
+   
     {
         id: 4,
-        image: '/Assets/about/motunrayo.jpg',
-        name: 'Olorunshola Qudroh',
-        role: 'frontend developer'
-    },
-    {
-        id: 5,
-        image: '/Assets/about/precious.jpg',
+        image: '../../Assets/about/precious.jpg',
         name: 'Precious Bassey',
         role: 'frontend developer'
     },
     {
-        id: 6,
-        image: '/Assets/about/oluwakemi.jpg',
+        id: 5,
+        image: '../../Assets/about/oluwakemi.jpg',
         name: 'Oluwakemi Atoyebi',
         role: 'frontend developer'
     },
     {
-        id: 7,
-        image: '/Assets/about/akinropo.jpg',
+        id: 6,
+        image: '../../Assets/about/akinropo.jpg',
         name: 'akinropo oyebami',
         role: 'frontend developer'
     },
     {
-        id: 8,
-        image: '/Assets/about/nimota.jpg',
+        id: 7,
+        image: '../../Assets/about/nimota.jpg',
         name: 'adeniran nimota',
         role: 'frontend developer'
     },
     {
-        id: 9,
+        id: 8,
         image: '/Assets/about/salem.jpg',
         name: 'Oluwaleke Salem',
         role: 'backend developer'
     },
     {
-        id: 10,
-        image: '/Assets/about/nurudeen.jpg',
+        id: 9,
+        image: '../../Assets/about/nurudeen.jpg',
         name: 'Nurudeen Tajudeen',
         role: 'backend developer'
     },
