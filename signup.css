@@ -175,7 +175,7 @@ form .checkbox{
 }
 
 form .checkbox label{
-    margin-top: 18px;
+    margin-top: 30px;
     color: gray;
 }
 
@@ -242,6 +242,10 @@ form .tc{
         width: 400px;
         max-width: 100%;
     }
+
+    form .checkbox label{
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 375px){
@@ -252,6 +256,14 @@ form .tc{
 
     form .field input{
         width: 80%;
+    }
+
+    form .checkbox label{
+        margin-top: 90px;
+    }
+
+    .popup{
+        width: 300px;
     }
 }
 
