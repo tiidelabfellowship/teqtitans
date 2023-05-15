@@ -8,9 +8,13 @@ header {
   }
   .logo {
     height: 70px;
-    width: 100px;
+    width: 100%;
     z-index: 3;
     border-radius:50%;
+    padding: 5px 0px;
+  }
+  .bars{
+    display: none;
   }
   .fa-user{
     background-color: var(--bg-primary);
@@ -187,5 +191,8 @@ header {
 @media(max-width:800px){
   .nav-links{
     display:none;
+  }
+  .bars{
+    display: block;
   }
 }
