@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up || travelease</title>
+    <title>Log In || travelease</title>
     <link rel="stylesheet" href="./signup.css">
     <link rel="stylesheet" href="./Stylesheets/container-styles/styles.css">
     <link rel="stylesheet" href="./Stylesheets/container-styles/header.css">
@@ -57,7 +57,7 @@
                 <div class="dropdown-list">
                     <ul>
                         <li><a href="./signup.html">Sign Up</a></li>
-                        <li><a href="./pages/Containers/Authentication/login.html">Sign In</a></li>
+                        <li><a href="./login.html">Sign In</a></li>
                     </ul>
                 </div>
             </li>
@@ -83,24 +83,13 @@
         </ul>
     </div>
 
-    <!-- Sign up page -->
+    <!-- Sign in page -->
     <div class="container">
 
         <div class="wrapper">
             <h2>Welcome</h2>
-            <p>Already have an account? <a href="./login.html"> Log in</a> </p>
+            <p>Don't have an account? <a href="./signup.html"> Sign up</a> </p>
             <form id="form" action="#">
-                <div class="field">
-                    <input type="text" name="fname" id="fname">
-                    <label for="fname">First Name</label>
-                    <div class="error"></div>
-                </div>
-    
-                <div class="field">
-                    <input type="text" name="lname" id="lname">
-                    <label for="lname">Last Name</label>
-                    <div class="error"></div>
-                </div>
     
                 <div class="field">
                     <input type="email" name="email" id="email">
@@ -114,19 +103,18 @@
                     <div class="error"></div>
                 </div>
     
-                <div class="field">
-                    <input type="password" name="password" id="confirm">
-                    <label for="password">Confirm Password</label>
-                    <div class="error"></div>
-                </div>
-    
-                <div class="checkbox">
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox">Email me exclusive Travelease promotions. You can opt out later as stated in the Privacy Policy</label>
+                <div class="check">
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">Remember Me</label>
+                    </div>
+                    <div class="forgot">
+                        <p>Forgot passord?</p>
+                    </div>
                 </div>
                 
                 <div class="field">
-                    <input type="submit" class="btn" value="Sign Up" onclick="openPopup()">
+                    <input type="submit" class="btn" value="Log In" onclick="openPopup()">
                 </div>
     
                 <div class="signin-link">
@@ -207,7 +195,7 @@
         </footer>
     
 
-        <script src="./signup.js"></script>
+        <script src="./login.js"></script>
         <script src="./Scripts/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rubik:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+    background-color: #000ee0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+} */
+.box{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(90deg, hsla(177,87%,79%,1) 0%, hsla(235,89%,70%,1)100%);
+}
+.container{
+    width: 600px;
+    margin: 50px 0px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    padding: 10px 0 10px 0;
+    min-height: 10vh;
+}
+header{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.sign{
+    color: orange;
+    padding-left: 20px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    min-height: 8vh;
+}
+.input{
+    height: 45px;
+    width: 87%;
+    border-color: orange;
+    outline: none;
+    color: #fff;
+    padding: 0 0 0 42px;
+    background: rgba(225,225,225,0.2);
+}
+i{
+    position: relative;
+    top: -31px;
+    left: 17px;
+    color: white;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(225,225,225,0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+.submit :hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+}
+.left{
+    display: flex;
+}
+label a{
+    color: #fff;
+    text-decoration: none;
+}
+.social{
+    color:blue;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: #fff !important;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+    justify-content: center;
+}
+.terms{
+    color: white;
+}
