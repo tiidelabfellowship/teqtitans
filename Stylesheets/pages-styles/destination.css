@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.container {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 40px;
+
+}
+
+.default-spacing {
+    padding: 25px 0 25px 0;
+}
+
+.hero {
+
+    background: url('../../Assets/destination/london.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+
+.hero-overlay {
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.354);
+
+}
+
+
+.content {
+    padding-left: 80px;
+    padding-top: 80px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.content a {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5%;
+    font-size: 15px;
+    color: black;
+}
+
+.content a:hover {
+    background: #3554d1;
+    color: rgb(255, 255, 255);
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+}
+
+
+
+.default-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services {
+    grid-template-columns: repeat(6, 1fr);
+
+    /* font-size: 10px; */
+}
+.activ {
+    text-align: center;
+    background-color: #fff;
+    left: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+
+.gen-info {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gen-info section {
+    padding-bottom: 50px;
+}
+
+
+.cards-spacing {
+    /* top right bottom left */
+    padding: 25px 0 0 0;
+}
+
+
+/*  Start of Recommended Hotels */
+.default-text a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.card-span {
+    position: absolute;
+    /* top right bottom left */
+    padding: 4px 10px 4px 10px;
+    top: 20px;
+    color: white;
+    background: #3554d1;
+}
+
+.card-span1 {
+    position: absolute;
+    /* top right bottom left */
+    padding: 4px 10px 4px 10px;
+    top: 20px;
+    background: #f8d448;
+}
+
+.card-heart {
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+    /* top right bottom left */
+    padding: 6.5px 6px 4px 6px;
+    border-radius: 50%;
+    background: white;
+    color: #3554d1;
+}
+
+.ratings {
+    /* top right bottom left */
+
+    padding: 10px 8px 10px 8px;
+    font-size: 13px;
+    border-radius: 10%;
+    color: white;
+    background: #3554d1;
+}
+
+.transparent {
+    font-size: 15px;
+    color: #000000b4;
+}
+
+.card-heart:hover {
+    color: white;
+    background: #3554d1;
+    transition-duration: .5s;
+}
+
+.price {
+    color: #3554d1;
+}
+
+.cards {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.cards1 {
+    background: url('../../Assets/destination/london.jpg');
+    background-size: cover;
+}
+
+.cards2 {
+    background: url('../../Assets/destination/Hotel.jpg');
+    background-size: cover;
+}
+
+.cards3 {
+    background: url('../../Assets/destination/nyc.jpg');
+    background-size: cover;
+}
+
+.cards4 {
+    background: url('../../Assets/destination/rome.jpg');
+    background-size: cover;
+}
+
+/*  End of Recommended Hotels */
+
+/*  Start of Most Popular Tours */
+.cards5 {
+    background: url('../../Assets/destination/stone.jpg');
+    background-size: cover;
+}
+
+.cards6 {
+    background: url('../../Assets/destination/westminister.jpg');
+    background-size: cover;
+}
+
+.cards7 {
+    background: url('../../Assets/destination/roller.jpg');
+    background-size: cover;
+}
+
+.cards8 {
+    background: url('../../Assets/destination/big\ ben.jpg');
+    background-size: cover;
+}
+
+.card-span5 {
+    position: absolute;
+    /* top right bottom left */
+    padding: 4px 10px 4px 10px;
+    top: 20px;
+    background: #00053d;
+    color: white;
+}
+
+/* End of Most Popular Tours  */
+@media only screen and (max-width: 600px) {
+
+    .container {
+        margin-left: 80px;
+        margin-top: 40px;
+        width: 50%;
+    }
+
+    .content {
+        top: 100px;
+        height: 300px;
+        position: relative;
+    }
+
+    .content a {
+        right: 30%;
+    }
+
+    .activ {
+        padding: 10px 10px 20px 20px;
+        font-size: 12px;
+    }
+
+    .about a {
+        font-size: 10px;
+    }
+
+    .about h1 {
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    .about p {
+        padding-bottom: 20px;
+    }
+
+    .default-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .gen-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text {
+        margin-top: 9px;
+        margin-bottom: 11px;
+    }
+}
