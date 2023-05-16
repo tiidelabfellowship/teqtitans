@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../../Stylesheets/container-styles/footer.css" />
     <title>Travel Ease | About Us</title>
     <link rel="stylesheet" href="../../Stylesheets/pages-styles/about.css" />
-    <script src="slider.js" defer></script>
+    <script src="/Scripts/slider.js" defer></script>
   </head>
   <body>
     <!-- Header and Navigation -->
@@ -30,9 +30,9 @@
           height="80px"
       /></a>
       <ul class="nav-links row uppercase">
-        <li><a href="../../index.html">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li class="dropdown nav-active">
-          <a href="#">About us</a><i class="fa fa-angle-down"></i>
+          <a href="/Pages/Containers/about.html">About us</a><i class="fa fa-angle-down"></i>
           <div class="dropdown-list">
             <ul>
               <li><a href="#">Our Activities</a></li>
@@ -43,10 +43,11 @@
         </li>
 
         <li class="dropdown">
-          <a href="destination.html">Destinatons <i class="fa fa-angle-down"></i></a>
+          <a href="/destination.html">Destinatons <i class="fa fa-angle-down"></i></a>
           <div class="dropdown-list">
             <ul>
               <li><a href="#">Hotel Booking</a></li>
+              <li><a href="/Pages/Containers/hire.html">Hire Services</a></li>
               <li><a href="#">Book a trip</a></li>
             </ul>
           </div>
@@ -66,13 +67,34 @@
           <i class="fas fa-user"></i> <i class="fa fa-angle-down"></i>
           <div class="dropdown-list">
             <ul>
-              <li><a href="#">Sign Up</a></li>
-              <li><a href="#">Sign In</a></li>
+              <li><a href="/signup.html">Sign Up</a></li>
+              <li><a href="/login.html">Sign In</a></li>
             </ul>
           </div>
         </li>
       </ul>
     </header>
+
+    <button class="bars" id="bars">
+      <i class="fas fa-bars"></i>
+  </button>
+
+     <!-- Mobile Nav -->
+  <div id="slideout-menu" class="slideout-menu">
+      <button class="bars" id="bars">
+          <i class="fas fa-times"></i>
+      </button>
+      <ul class="slide-nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Pages/Containers/about.html">About Us</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="/Pages/Containers/hire.html">Hire Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="/login.html">Login</a></li>
+          <li><a href="/signup.html">Sign Up</a></li>
+      </ul>
+  </div>
+
     <main>
       <section class="bg">
             <h1 class="hero-title">Explore the world with us.</h2>
@@ -187,10 +209,11 @@
         <div class="footer-col-2">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="destination.html">Destination</a></li>
+            <li><a href="/Pages/Containers/about.html">About Us</a></li>
+            <li><a href="/destination.html">Destination</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Login/Sign-up</a></li>
+            <li><a href="/login.html">Login/Sign-up</a></li>
+            <li><a href="/signup.html">Sign-up</a></li>
             <li><a href="#">Book a trip</a></li>
           </ul>
           Careers
@@ -198,7 +221,7 @@
         <div class="footer-col-3">
           <h2>Other Services</h2>
           <ul>
-            <li>Car hire</li>
+            <li><a href="/Pages/Containers/hire.html">Car hire</a></li>
             <li>Device tracker</li>
             <li>Tour list</li>
             <li>Hotel bookings</li>

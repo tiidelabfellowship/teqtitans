@@ -199,22 +199,35 @@ button {
 }
 
 @media (max-width: 600px) {
-    .header, .dropdown, .nav-links, footer {
-        display: none;
-    }
-
+   
     .features-box,
-    .about-content {
+    .about-content,
+    .team-card,
+    .review-card-container {
         flex-direction: column;
     }
 
-    .team {
+    .team, .box, 
+    .featuresB {
         width: 90%;
     }
 
+    .reviewCard {
+        width: 100%;
+        height: 300px;
+    }
+
+    .box,
     .featuresB {
-        width: 90%;
         margin-bottom: 30px;
     }
 
+    .reports div, .reviewCard,
+    .team {
+        margin-bottom: 20px;
+    }
+
+    .hero-title, .section-title {
+        line-height: 1;
+    }
 }
