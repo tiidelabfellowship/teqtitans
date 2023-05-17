@@ -54,6 +54,12 @@ let data = [
         name: 'Nurudeen Tajudeen',
         role: 'backend developer'
     },
+    {
+        id: 9,
+        image: '../../Assets/about/joshua.jpg',
+        name: 'Joshua Farinmade',
+        role: 'frontend developer'
+    },
 ]
 
 const prevBtn = document.querySelector(".prev");
