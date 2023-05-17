@@ -1,0 +1,237 @@
+/* ======== Typography ======== */
+
+.hero-title {
+    font-size: 3rem;
+    width: 50%;
+    margin-bottom: .3em;
+}
+
+.hero-title, .bg p {
+    color: white;
+    text-shadow: 2px 2px rgba(0,0,0,0.8);
+}
+
+.bg p {
+    font-size: 1.3rem;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.section-title, .fullname,
+.featuresB h3,
+.reviewer h3 {
+    color: var(--bg-primary);
+}
+
+.fullname, .techrole,
+.reviewer h3 {
+    text-transform: capitalize;
+}
+
+.fullname {
+    font-size: 1.5rem;
+}
+
+.techrole, .featuresB p,
+.box p, .reports p {
+    font-size: 1rem;
+    color: gray;
+}
+
+.reports h2 {
+    margin-bottom: 2px;
+}
+
+.featuresB h3,
+.reviewer h3 {
+ font-size: 1.2rem;
+}
+
+/*  ====== Layout ======== */
+
+.team-card, .bg,
+.features-box, .about-content,
+.review-card-container,
+.review-content {
+    display: flex;
+    align-items: center;
+}
+
+.team-card,
+.features-box,
+.about-content,
+.review-card-container {
+    justify-content: space-between;
+}
+
+.team-container, 
+.content-container, 
+.about-content, 
+.review-card-container {   
+    width: 90%;
+    margin: 150px auto;
+    transition: .5s ease;
+}
+
+.review-card-container {
+    margin: 60px auto;
+}
+
+.team-card {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.team {
+    width: 31%;
+    margin-top: 2em;
+}
+
+.review {
+    background-color: rgb(212, 209, 209);
+    padding: 120px 20px;
+    transition: .5s ease-in-out;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.reviewCard {
+    background-color: white;
+    border-radius: 13px;
+    padding: 2em;
+    height: 270px;
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+}
+
+.review-content {
+    margin-top: auto;
+}
+
+.reviewer {
+    margin-left: 10px;
+}
+
+.review-content img {
+    width: 20%;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.team img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 13px;
+} 
+
+.box:last-child img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reports {
+    border-bottom: 1px solid grey;
+    padding: 1em;
+    text-align: center;
+}
+
+button {
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary);
+    border: 0;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+}
+
+.bg {
+    background: linear-gradient(rgba(9, 10, 34, 0.5),rgba(1, 1, 10, 0.6)), url('../../Assets/about/hero.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+       text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features-box {
+    margin: 100px auto;
+        padding:1rem;
+}
+
+.featuresB {
+    width: 32%;
+    text-align: center;
+    box-shadow:1px 1px 5px rgba(0,0,0,0.7);
+    padding: 1.4rem;
+    border-radius:4px;
+}
+
+.content-top {
+    margin: 80px;
+    text-align: center;
+}
+
+.box {
+    width: 47%;
+}
+
+.team-container {
+    position: relative;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 50%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.next {
+    right: -18px;
+}
+.prev{
+    left:-18px;
+}
+
+@media (max-width: 600px) {
+   
+    .features-box,
+    .about-content,
+    .team-card,
+    .review-card-container {
+        flex-direction: column;
+    }
+
+    .team, .box, 
+    .featuresB {
+        width: 90%;
+    }
+
+    .reviewCard {
+        width: 100%;
+        height: 300px;
+    }
+
+    .box,
+    .featuresB {
+        margin-bottom: 30px;
+    }
+
+    .reports div, .reviewCard,
+    .team {
+        margin-bottom: 20px;
+    }
+
+    .hero-title, .section-title {
+        line-height: 1;
+    }
+}
