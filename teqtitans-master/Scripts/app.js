@@ -12,7 +12,6 @@ times.addEventListener('click', ()=>{
     slideoutMenu.classList.remove('open')
 })
 
-
      // SLIDER
 
      var slides = document.querySelectorAll(".slide");

@@ -210,7 +210,6 @@ h1.slide-title {
     font-size: 48px;
     max-width: 500px;
   }
-
   section {
     width: 90%;
   }
@@ -230,6 +229,7 @@ h1.slide-title {
     justify-content: space-between;
     align-items:center;
   }
+  
   .service-item {
     width: 49%;
     margin-bottom: 400px;
