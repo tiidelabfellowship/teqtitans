@@ -22,45 +22,29 @@
         <a href="index.html">
             <img src="./Assets/images/travelEaseWhiteBg.png" alt="logo" class="logo" width="60px" height="80px" /></a>
         <ul class="nav-links row uppercase">
-            <li class="nav-active"><a href="/index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="./Pages/Containers/about.html">About us</a><i class="fa fa-angle-down rotate"></i>
-                <div class="dropdown-list">
-                    <ul>
-                        <li><a href="#">Our Activities</a></li>
-
-                        <li><a href="#">Partnership</a></li>
-                    </ul>
-                </div>
-            </li>
+            <li class="nav-active"><a href="index.html">Home</a></li>
+            <li>
+                <a href="./Pages/Containers/about.html">About us</a>
+                           </li>
 
             <li class="dropdown">
                 <a href="/destination.html">Destinatons <i class="fa fa-angle-down"></i></a>
                 <div class="dropdown-list">
                     <ul>
                         <li><a href="#">Hotel Booking</a></li>
-                    <li><a href="/Pages/Containers/hire.html">Hire Services</a></li>
+                        <li><a href="/Pages/Containers/hire.html">Hire Services</a></li>
                         <li><a href="#">Book a trip</a></li>
                     </ul>
                 </div>
             </li>
-            <li class="dropdown">
+            <li>
                 <a href="#">Contact Us</a>
-                <i class="fa fa-angle-down"></i>
-                <div class="dropdown-list">
-                    <ul>
-                        <li><a href="#">Enquiries</a></li>
-                        <li><a href="#">Our Offices</a></li>
-                        <li><a href="#">Social Media </a></li>
-
-                    </ul>
-                </div>
-            </li>
+                           </li>
             <li class="dropdown">
                 <i class="fas fa-user"></i> <i class="fa fa-angle-down"></i>
                 <div class="dropdown-list">
                     <ul>
-                        <li><a href="./signup.html">Sign Up</a></li>
+                        <li><a href="/signup.html">Sign Up</a></li>
                         <li><a href="/login.html">Sign In</a></li>
                     </ul>
                 </div>
@@ -68,17 +52,33 @@
         </ul>
 
     </header>
+    <!-- Hero Section/SLider -->
 
-    <!-- Hero-SEction -->
-    <div class="hero-container row">
-        <div class="hero-inner">
-            <p class="hero-lead uppercase">
-                Travel Ease
-            </p>
-            <p>
-                Discover the world's hidden gems and create memories that last a lifetime. Your journey begins here.
-            </p>
-            <button class="btn"><a href="#">About Us</a></button>
+    <div class="slider-container">
+        <div class="img-slider">
+            <div class="slide active" id="slide-one">
+                <div class="slide-content">
+                    <h1 class="slide-title">Welcome to TRAVEL EASE</h1>
+                    <button class="btn slide-btn">About Us</button>
+                </div>
+            </div>
+            <div class="slide" id="slide-two">
+                <div class="slide-content">
+                    <h1 class="slide-title">Let your journey begins</h1>
+                    <a><button class="btn slide-btn">Book a trip</button></a>
+                </div>
+            </div>
+            <div class="slide" id="slide-three">
+                <div class="slide-content">
+                    <h1 class="slide-title">Explore around the world</h1>
+                    <a><button class="btn slide-btn">Reach Out</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-navigation">
+            <div class="slider-btn active"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
         </div>
     </div>
     <button class="bars" id="bars">
@@ -93,6 +93,7 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/Pages/Containers/about.html">About Us</a></li>
             <li><a href="/destination.html">Destinations</a></li>
+            <li><a href="/Pages/Containers/hire.html">Hire Services</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="/login.html">Login</a></li>
             <li><a href="/signup.html">Sign Up</a></li>
@@ -100,14 +101,107 @@
     </div>
 
 
-    <!-- Services -->
-    <section class="service-block">
-        <h1 class="text-center">
-            What we offer!
-        </h1>
-      
+    <!-- Main area -->
+    <section class="welcome column">
+        <!-- CHANGE ALL TO LINKS -->
+        <div class="welcome-block text-center">
+            <h2>Welcome to TRAVEL EASE</h2>
+            <p>
+                Travel Ease is a revolutionary travel planning application that has taken the world by storm. With its
+                user-friendly interface and advanced features, it has set itself apart from other travel planning apps
+                in the market.
+                Travel Ease understands that every traveler is unique, and it strives to provide a truly customized
+                experience. <br>
+                Whether you're looking for popular tourist spots or best locations for vacation, Travel Ease has you
+                covered.
+                It's a
+                one-stop solution for all your travel needs. So, why settle for less when you can have Travel Ease?
+                Start planning your next adventure today!
+
+            </p>
+        </div>
+        <div class="services-container">
+            <div class="service-item row">
+                <div class="icon-block">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <p><a href="">Interactive User Experience</a></p>
+            </div>
+            <div class="service-item row">
+                <div class="icon-block">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <p><a href="">Weather Forecast</a></p>
+            </div>
+            <div class="service-item row">
+                <div class="icon-block">
+                    <i class="fas fa-book"></i>
+                </div>
+                <p><a href="">Travel bookings</a></p>
+            </div>
+            <div class="service-item row">
+                <div class="icon-block">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <p><a href="">Destination discovery</a></p>
+            </div>
+            <div class="service-item row">
+                <div class="icon-block">
+                    <i class="fas fa-comment"></i>
+                </div>
+                <p><a href="">Travelling Tips</a></p>
+            </div>
+            <div class="service-item row">
+                <div class="icon-block">
+                    <i class="fas fa-home"></i>
+                </div>
+                <p><a href="">Hotel Reservations</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="mandate-block column">
+        <p class="center-text">
+            The aim of Travel Ease is to provide travelers with a seamless and personalized travel planning experience.
+            It strives to simplify the process, ensuring
+            every traveler's ease and enjoyment throughout their adventures.
+        </p>
+        <button class="btn">Explore!</button>
+    </section>
 
     </section>
+
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <h2 class="uppercase">Photo Gallery</h2>
+        <div class="img-block row">
+            <div class="img-wrap">
+                <img src="./Assets/images/scroll5.jpg" alt="demo" class="photo" />
+                <img src="./Assets/images/scroll2.jpg" alt="demo" class="photo" />
+                <img src="./Assets/images/scroll4.jpg" alt="demo" class="photo" />
+                <img src="./Assets/images/scroll3.jpg" alt="demo" class="photo" />
+                <img src="./Assets/images/scroll1.jpg" alt="demo" class="photo" />
+                <img src="./Assets/images/scroll3.jpg" alt="demo" class="photo" />
+                <img src="./Assets/images/scroll5.jpg" alt="demo" class="photo" />
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Partners -->
+    <section class="partners-block">
+        <h2 class="uppercase">Our Partners</h2>
+        <div class="partners-item-wrap row">
+            <img src="./Assets/images/travelEaseWhiteBg.png" alt="travel ease" class="partners-item" />
+            <img src="./Assets/images/tiidelab.jpg" alt="tiidelab" class="partners-item" />
+            <img src="./Assets/images/tcl.jpg" alt="tcl" class="partners-item" />
+            <img src="./Assets/images/ksolutions.jpg" alt="ksolutions" class="partners-item" />
+        </div>
+    </section>
+
+
+
     <!-- Footer -->
     <footer>
         <div class="footer-wrapper">
@@ -129,7 +223,6 @@
                 <ul>
                     <li><a href="/Pages/Containers/about.html">About Us</a></li>
                     <li><a href="/destination.html">Destination</a></li>
-                    <li><a href="/Pages/Containers/hire.html">Hire</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="/login.html">Login</a></li>
                     <li><a href="/signup.html">Sign-up</a></li>
@@ -140,7 +233,7 @@
             <div class="footer-col-3">
                 <h2>Other Services</h2>
                 <ul>
-                    <li><a href="/Pages/Containers/hire.html">Car hire</a></li>
+                    <li><a href="/Pages/Containers/hire.html">Hire Services</a></li>
                     <li><a href="#">Device tracker</a></li>
                     <li><a href="#">Tour list</a></li>
                     <li><a href="#">Hotel Bookings</a></li>
@@ -163,7 +256,7 @@
         </div>
     </footer>
 
-    <script src="/Scripts/app.js"></script>
+    <script src="./Scripts/app.js"></script>
 </body>
 
 </html>
