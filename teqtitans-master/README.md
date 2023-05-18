@@ -1,1 +1,0 @@
-Building of a travelling planning application by Team Teqtitians of TIIDELAB_Prefellowship 3.0
